@@ -1,13 +1,18 @@
-package com.example.notesmvvm.screens
+package com.example.notesmvvm.screens.main
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.notesmvvm.R
+import com.example.notesmvvm.databinding.FragmentMainBinding
 
-class StartFragment : Fragment() {
+
+class MainFragment : Fragment() {
+
+    private val binding: FragmentMainBinding by lazy {
+        FragmentMainBinding.inflate(layoutInflater)
+    }
 
 
     override fun onCreateView(
@@ -15,8 +20,7 @@ class StartFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_start, container, false)
+        return binding.root
     }
-
 
 }
