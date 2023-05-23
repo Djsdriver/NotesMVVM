@@ -8,6 +8,7 @@ android {
     compileSdk 33
 
     defaultConfig {
+        viewBinding.enabled= true
         applicationId "com.example.notesmvvm"
         minSdk 24
         targetSdk 33

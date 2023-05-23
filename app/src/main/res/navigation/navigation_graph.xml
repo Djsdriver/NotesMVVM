@@ -23,7 +23,7 @@
         android:id="@+id/addNewNoteFragment"
         android:name="com.example.notesmvvm.screens.AddNewNoteFragment"
         android:label="fragment_add"
-        tools:layout="@layout/fragment_add" >
+        tools:layout="@layout/fragment_add_note" >
         <action
             android:id="@+id/action_addNewNoteFragment_to_mainFragment"
             app:destination="@id/mainFragment" />
